@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    
+}
+
+.navbar {
+    display: flex;
+    margin-right: 40px;
+    
+}
+
+.logo {
+    margin-left: 30px;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #931a42;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    background: #171717;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(184, 75, 75, 0.4);
+    background-color: #171717;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  .dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #ffffff;
+    background-color: #931a42;
+  }
+
+.header {
+    
+    background-size: cover;
+    background: url(imagenes/Fondo1.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+.title {
+        text-align:center;
+        color: #000;
+        
+        font-family: impact;
+        font-size: 36px;
+        line-height: 70%;
+        letter-spacing: 5px;
+        text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff, 2px 2px 0px #fff;
+        }
+    
+
+
+p {
+    text-align:center;
+        color: #ffffff;  
+        font-family: Verdana;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation-duration: 3s;
+        animation-name: slidein;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #751233;
+    color: #fff;
+    text-decoration: none;
+    background: #931a42;
+    
+}
+
+.btn:hover {
+    
+    background: none;
+    
+}
+
+.content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 50px 0;
+    background: #303030;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 250px;
+    width: 300px;
+    background: #931a42;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #751233;
+    margin: 20px;
+}
+
+.box-container .box h3 {
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.price {
+    background: url(imagenes/Fondo2.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+.about {
+    background: #303030;
+    padding: 50px 0;
+    
+}
+
+.box-container2{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box {
+    width: 250px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    background: #171717;
+    margin: 20px 20px;
+}
+
+.box-container2 .box img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 6px solid #931a42;
+}
+
+.box-container2 .box h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #931a42;
+    padding-top: 10px;
+}
+
+.box-container2 .box p {
+
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 0;
+}
+
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+}
